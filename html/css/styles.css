@@ -1,0 +1,86 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #eee;
+}
+
+.tablet-container {
+	width: 1707px;
+	min-height: 1067px;
+	background-color: #ffffff;
+}
+
+.form-control {
+	width: 40% !important;
+	padding: 40px 25px;
+}
+
+.btn {
+	padding: 17px 80px;
+	margin-left: 2px;
+}
+
+.form-control, .btn {
+	font-size: 24pt;
+}
+
+form {
+	padding-top: 20px;
+}
+
+ul {
+	padding: 0px;
+	width: 95%;
+	margin: auto;
+	margin-top: 40px;
+}
+
+ul li {
+	list-style: none;
+	text-align: left;
+}
+
+ul.tasks li {
+	font-size: 36pt;
+	border-bottom: 1px solid #ccc;
+	line-height: 2.5em;
+}
+
+.task-text {
+	margin-left: 100px;
+}
+
+ul.links li {
+	display: inline;
+	font-size: 30pt;
+}
+
+ul.links li{
+	margin: auto 60px;
+}
+
+ul.links li a {
+	padding-bottom: 5px;
+}
+
+ul.links li a:hover{
+	text-decoration: none;
+}
+
+ul.links li a.active{
+	border-bottom: 4px solid #555;
+	text-decoration: none;
+}
+
+nav.navbar.navbar-default {
+	border-radius: 0px;
+}
+
+.ui-datepicker{
+	font-size: 40pt;
+}
+
+.ui-icon {
+	background-size: 'cover';
+	background-repeat: repeat;
+}

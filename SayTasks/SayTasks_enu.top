@@ -1,0 +1,13 @@
+topic: ~SayTasks()
+language: enu
+
+concept:(askTasks) ["what are my tasks" "tell me my tasks" "my tasks" "tasks"]
+
+u:(~askTasks) Do you want tasks today, this week, or this month?
+    u1:(today) $onStopped=today
+    u1:('this week') $onStopped=weekly
+    u1:('this month') $onStopped=monthly
+
+u:(~askTasks ['today' 'this day']) $onStopped=today
+u:(~askTasks 'this week') $onStopped=weekly
+u:(~askTasks 'this month') $onStopped=monthly

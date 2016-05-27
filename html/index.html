@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>To-do List App</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
+	<link rel="stylesheet" href="css/jquery-ui.min.css">
+	<link rel="stylesheet" href="css/jquery-ui.theme.min.css">
+
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+	<script src="scripts/jquery-ui.min.js"></script>
+
+	<script src="/libs/qimessaging/1.0/qimessaging.js"></script>
+
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="text-center">
+	<div class="tablet-container">
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<span class="navbar-brand">
+						To-do List App
+					</span>
+					<span class="navbar-text">
+						by Alfonz Montelibano
+					</span>
+				</div>
+			</div>
+		</nav>
+
+		<form class="form-inline">
+			<input class="form-control" id="taskname" type="text" placeholder="What are your tasks today?"/>
+			<input class="form-control" type="text" id="expirationdate" placeholder="Date">
+			<input type="submit" class="btn btn-success"/>
+		</form>
+
+		<ul class="links">
+			<li><a class="active" id="today-filter" href="#">Today</a></li>
+			<li><a id="weekly-filter" href="#">Weekly</a></li>
+			<li><a id="monthly-filter" href="#">Monthly</a></li>
+			<li><a id="all-filter" href="#">All</a></li>
+		</ul>
+
+		<ul class="tasks">
+		</ul>
+
+		<script src="scripts/app.js"></script>
+
+		<script>
+			$(document).ready(function() {
+				$(function() {
+					$( "#expirationdate" ).datepicker();
+				});
+			});
+		</script>
+	</div>
+</body>
+</html>
